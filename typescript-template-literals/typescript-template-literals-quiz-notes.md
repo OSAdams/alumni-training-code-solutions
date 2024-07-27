@@ -6,7 +6,12 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is the syntax for writing a template literal?
 
+  - using backticks ` instead of a single or double quote
+  - const hello: string = \`Hello I am a template literal\`
+
 - What is "string interpolation"?
+  - ... \`Hello I am a ${stringInterpolation}\`
+  - String interpolation is the ability to substitute part fot he string for the values of variables or expressions
 
 ## Notes
 
