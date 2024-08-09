@@ -1,10 +1,5 @@
-type Book = {
-  isbn: string;
-  title: string;
-  author: string;
-}[];
-
-const bookshelf: Book = [
+'use strict';
+const bookshelf = [
   {
     isbn: '978-1491929483',
     title:
@@ -23,7 +18,6 @@ const bookshelf: Book = [
     author: 'Phil Sturgeon & Laura Bohill',
   },
 ];
-
 console.log(
   `The author of the second book on the shelf is ${bookshelf[1].author}`
 );

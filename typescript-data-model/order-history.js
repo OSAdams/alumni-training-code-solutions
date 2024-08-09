@@ -1,21 +1,5 @@
-interface Order {
-  product: {
-    type: string;
-    title: string;
-    itemNumber?: string;
-    author?: string;
-    manufacturer?: string;
-    price: number;
-  }[];
-  orderDate: string;
-  totalPrice: number;
-  orderNumber: string;
-  delivered: boolean;
-  deliverDate?: string;
-  returnWindow?: string;
-}
-
-const orderHistory: Order[] = [
+'use strict';
+const orderHistory = [
   {
     orderDate: '08-04-2020',
     orderNumber: '114-3941689-8772322',
@@ -88,5 +72,4 @@ const orderHistory: Order[] = [
     ],
   },
 ];
-
 console.log('the value of order history: ', orderHistory);
