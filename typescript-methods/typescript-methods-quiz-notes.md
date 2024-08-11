@@ -13,15 +13,21 @@ Answer the following questions in the provided markdown file before turning in t
 
   - a `function` assigned to a `property` of an `object`
   - `instance methods` which are built-in tasks performed by an object instance
-  - ``
+  - `static methods` which are called directly on the object constructor
 
 - How is a method different from any other function?
-
+  - a method uses a `this` binding
 - How do you remove the last element from an array?
-
+  - the `pop()` method
 - How do you round a number down to the nearest integer?
 
+  - calling the `floor()` method of the `Math` object
+  - `Math.floor()`
+
 - How do you generate a random number?
+
+  - calling the `random()` method of the `Math` object
+  - `Math.random()`
 
 - How do you delete an element from an array?
 
