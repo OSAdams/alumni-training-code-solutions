@@ -6,7 +6,14 @@ Answer the following questions in the provided markdown file before turning in t
 
 - Why do we log things to the console?
 
+  - To help us work with data throughout our application
+  - accurate debugging process
+
 - What is a method?
+
+  - a `function` assigned to a `property` of an `object`
+  - `instance methods` which are built-in tasks performed by an object instance
+  - ``
 
 - How is a method different from any other function?
 
