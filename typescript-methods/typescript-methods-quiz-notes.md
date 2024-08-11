@@ -16,9 +16,13 @@ Answer the following questions in the provided markdown file before turning in t
   - `static methods` which are called directly on the object constructor
 
 - How is a method different from any other function?
+
   - a method uses a `this` binding
+
 - How do you remove the last element from an array?
+
   - the `pop()` method
+
 - How do you round a number down to the nearest integer?
 
   - calling the `floor()` method of the `Math` object
@@ -31,11 +35,19 @@ Answer the following questions in the provided markdown file before turning in t
 
 - How do you delete an element from an array?
 
+  - the `splice(startingIndex, totalElements)`
+
 - How do you append an element to an array?
+
+  - the `push(element)` method
 
 - How do you break a string up into an array?
 
+  - the `split()` method
+
 - Do string methods change the original string? How would you check if you weren't sure?
+
+  -
 
 - Roughly how many string methods are there according to the MDN Web docs?
 
