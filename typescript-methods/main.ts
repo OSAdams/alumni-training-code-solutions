@@ -35,3 +35,15 @@ const firstName = firstAndLastName[0];
 const sayMyName = firstName.toUpperCase();
 console.log('value of firstName after toUppercase() is called: ', firstName);
 console.log('value of sayMyName: ', sayMyName);
+
+const employee = {
+  name: 'Jim Lahey',
+  age: 55,
+  position: 'Trailer Park Supervisor',
+};
+const employeeKeys = Object.keys(employee);
+console.log('value of employeeKeys: ', employeeKeys);
+const employeeValues = Object.values(employee);
+console.log('value of employeeValues: ', employeeValues);
+const employeePairs = Object.entries(employee);
+console.log('value of employeePairs: ', employeePairs);
