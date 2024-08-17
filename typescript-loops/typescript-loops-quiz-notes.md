@@ -6,43 +6,44 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is the purpose of a loop?
 
-  - a
+  - _Loops_ are a way to repeat the same code multiple times
 
 - What is the purpose of a **condition** expression in a loop?
 
-  - b
+  - To make a _rule_ that _executes_ a `code block` when the **condition** is met
 
 - What does "iteration" mean in the context of loops?
 
-  - c
+  - A single _execution_ of a loop body
+  - A `code block` being _executed_ during an "iteration" of a loop
 
 - _When_ does the **condition** expression of a `while` loop get evaluated?
 
-  - d
+  - The **condition** is evaluated before _executing_ the statement
 
 - _When_ does the **initialization** expression of a `for` loop get evaluated?
 
-  - e
+  - The **initialization** executes once before anything else
 
 - _When_ does the **condition** expression of a `for` loop get evaluated?
 
-  - f
+  - The **condition** is checked before every _loop iteration_, until the **condition** is `false`
 
 - _When_ does the **final** expression of a `for` loop get evaluated?
 
-  - g
+  - The **final** expression get evaluated after the _code block_ is executed
 
 - Besides a `return` statement, which exits its entire function block, which keyword exits a loop before its **condition** expression evaluates to `false`?
 
-  - h
+  - A `break` statement
 
 - What does the `++` increment operator do?
 
-  - i
+  - _Adds one to_ its operand and returns the value before or after the _increment_
 
 - How do you iterate through the keys of an object?
 
-  - j
+  - initializing a `for... in` loop
 
 ## Notes
 
