@@ -1,7 +1,7 @@
+'use strict';
 /* exported sumAll */
-
-const sumAll = (numbers: number[]): number => {
-  let result: number = 0;
+const sumAll = (numbers) => {
+  let result = 0;
   for (const i of numbers) {
     result += i;
   }

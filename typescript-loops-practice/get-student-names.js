@@ -1,7 +1,7 @@
+'use strict';
 /* exported getStudentNames */
-
-const getStudentNames = (students: any[]): string[] => {
-  const result: string[] = [];
+const getStudentNames = (students) => {
+  const result = [];
   for (const i of students) {
     result.push(i.name);
   }

@@ -1,6 +1,6 @@
+'use strict';
 /* exported includesSeven */
-
-const includesSeven = (array: number[]): boolean => {
+const includesSeven = (array) => {
   for (const i of array) {
     if (i === 7) {
       return true;

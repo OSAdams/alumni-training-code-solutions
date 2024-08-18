@@ -1,7 +1,7 @@
+'use strict';
 /* exported getIndexes */
-
-const getIndexes = (array: any[]): number[] => {
-  const result: number[] = [];
+const getIndexes = (array) => {
+  const result = [];
   for (let i = 0; i < array.length; i++) {
     result.push(i);
   }

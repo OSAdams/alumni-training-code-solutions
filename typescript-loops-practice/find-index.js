@@ -1,6 +1,6 @@
+'use strict';
 /* exported findIndex */
-
-const findIndex = (array: any[], value: any): number => {
+const findIndex = (array, value) => {
   for (const i in array) {
     if (array[i] === value) {
       return +i;
