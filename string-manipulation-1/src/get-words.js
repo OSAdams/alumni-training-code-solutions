@@ -1,6 +1,6 @@
+'use strict';
 /* exported getWords */
-
-const getWords = (string: string): string[] => {
+const getWords = (string) => {
   if (!string) {
     return [];
   }

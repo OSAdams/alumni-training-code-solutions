@@ -1,7 +1,7 @@
+'use strict';
 /* exported capitalize */
-
-const capitalize = (word: string): string => {
-  let result: string = '';
+const capitalize = (word) => {
+  let result = '';
   for (let i = 0; i < word.length; i++) {
     if (i === 0) {
       result += word[i].toUpperCase();
