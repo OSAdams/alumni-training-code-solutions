@@ -1,7 +1,7 @@
+'use strict';
 /* exported getValues */
-
-const getValues = (object: Record<string, unknown>): unknown[] => {
-  const result: unknown[] = [];
+const getValues = (object) => {
+  const result = [];
   for (const key in object) {
     result.push(object[key]);
   }

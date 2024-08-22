@@ -1,0 +1,6 @@
+'use strict';
+/* exported setValue */
+const setValue = (object, key, value) => {
+  object[key] = value;
+  return undefined;
+};
