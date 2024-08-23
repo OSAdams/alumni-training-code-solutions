@@ -1,6 +1,6 @@
+'use strict';
 /* exported includes */
-
-const includes = (array: any[], value: any[]): boolean => {
+const includes = (array, value) => {
   for (const index of array) {
     if (index === value) {
       return true;

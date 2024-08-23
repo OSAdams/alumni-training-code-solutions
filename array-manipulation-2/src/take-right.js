@@ -1,7 +1,7 @@
+'use strict';
 /* exported takeRight */
-
-const takeRight = (array: any[], count: number): any[] => {
-  const result: any[] = [];
+const takeRight = (array, count) => {
+  const result = [];
   if (array.length === 0) {
     return result;
   } else if (array.length < count) {

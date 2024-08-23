@@ -1,11 +1,11 @@
+'use strict';
 /* exported take */
-
-const take = (array: any[], count: number): any[] => {
-  const result: any[] = [];
+const take = (array, count) => {
+  const result = [];
   if (array.length === 0) {
     return result;
   }
-  let counter: number = 0;
+  let counter = 0;
   while (counter < count) {
     result.push(array[counter]);
     counter++;

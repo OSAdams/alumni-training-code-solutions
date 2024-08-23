@@ -1,9 +1,9 @@
+'use strict';
 /* exported chunk */
-
-const chunk = (array: unknown[], size: number): unknown[] => {
-  const result: unknown[] = [];
-  let subArray: unknown[] = [];
-  let index: number = 0;
+const chunk = (array, size) => {
+  const result = [];
+  let subArray = [];
+  let index = 0;
   if (array.length === 0 || array.length < size) {
     return result;
   }

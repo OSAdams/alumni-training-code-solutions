@@ -1,7 +1,7 @@
+'use strict';
 /* exported dropRight */
-
-const dropRight = (array: any[], count: number): any[] => {
-  const result: any[] = [];
+const dropRight = (array, count) => {
+  const result = [];
   if (array.length === 0 || array.length < count) {
     return result;
   }
