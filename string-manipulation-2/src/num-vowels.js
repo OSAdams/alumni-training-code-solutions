@@ -1,8 +1,8 @@
+'use strict';
 /* exported numVowels */
-
-const numVowels = (string: string): number => {
-  let count: number = 0;
-  const lowerCaseString: string = string.toLowerCase();
+const numVowels = (string) => {
+  let count = 0;
+  const lowerCaseString = string.toLowerCase();
   for (const index of lowerCaseString) {
     if (
       index === 'a' ||

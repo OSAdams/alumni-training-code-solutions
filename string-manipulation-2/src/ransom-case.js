@@ -1,7 +1,7 @@
+'use strict';
 /* exported ransomCase */
-
-const ransomCase = (string: string): string => {
-  let result: string = '';
+const ransomCase = (string) => {
+  let result = '';
   for (let i = 0; i < string.length; i++) {
     if (i % 2 === 0) {
       result += string[i].toLowerCase();
