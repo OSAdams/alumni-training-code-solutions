@@ -1,5 +1,4 @@
 'use strict';
-/* exported pokedex */
 const pokedex = [
   {
     number: '001',
@@ -65,3 +64,33 @@ const pokedex = [
     imageUrl: 'images/blastoise.png',
   },
 ];
+const renderPokemon = (pokemon) => {
+  const $columnThird = document.createElement('div');
+  $columnThird.setAttribute('class', 'column-third');
+  const $pokemonCard = document.createElement('div');
+  $pokemonCard.setAttribute('class', 'pokemon-card');
+  const $pokemonImage = document.createElement('img');
+  $pokemonImage.setAttribute('src', pokemon.imageUrl);
+  const $pokemonCardText = document.createElement('div');
+  $pokemonCardText.setAttribute('class', 'pokemon-card-text');
+  const $pokemonName = document.createElement('h2');
+  $pokemonName.textContent = pokemon.name;
+  const $pokemonNumber = document.createElement('h3');
+  $pokemonNumber.textContent = '#' + pokemon.number;
+  const $pokemonDescription = document.createElement('p');
+  $pokemonDescription.textContent = pokemon.description;
+  $pokemonCardText.appendChild($pokemonName);
+  $pokemonCardText.appendChild($pokemonNumber);
+  $pokemonCardText.appendChild($pokemonDescription);
+  $pokemonCard.appendChild($pokemonImage);
+  $pokemonCard.appendChild($pokemonCardText);
+  $columnThird.appendChild($pokemonCard);
+  return $columnThird;
+};
+const $row = document.querySelector('.row');
+if (!$row) {
+  throw new Error('The $row query failed');
+}
+for (const index of pokedex) {
+  $row.appendChild(renderPokemon(index));
+}
