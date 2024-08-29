@@ -1,3 +1,4 @@
+'use strict';
 const $hotButton = document.querySelector('.hot-button');
 console.log('value of $hotButton: ', $hotButton);
 console.dir($hotButton);
@@ -10,9 +11,8 @@ console.dir($clickCount);
 if (!$clickCount) {
   throw new Error('The $clickCount query failed');
 }
-
-let buttonClickedCount: number = 0;
-const handleClick = (): void => {
+let buttonClickedCount = 0;
+const handleClick = () => {
   if (!$hotButton || !$clickCount) {
     throw new Error('The $hotButton or $clickCount query failed');
   }
@@ -33,5 +33,4 @@ const handleClick = (): void => {
       : 'nuclear';
   $hotButton.className = 'hot-button ' + clickThreshold;
 };
-
 $hotButton.addEventListener('click', handleClick);
