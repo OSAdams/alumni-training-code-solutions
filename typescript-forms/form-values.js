@@ -1,17 +1,11 @@
-interface FormElements extends HTMLFormControlsCollection {
-  name: HTMLInputElement;
-  email: HTMLInputElement;
-  message: HTMLTextAreaElement;
-}
-
-const $contactForm = document.getElementById('contact-form') as HTMLFormElement;
+'use strict';
+const $contactForm = document.getElementById('contact-form');
 if (!$contactForm) {
   throw new Error('Query for $contactForm failed');
 }
-
-const handleSubmit = (e: Event): void => {
+const handleSubmit = (e) => {
   e.preventDefault();
-  const $formElements = $contactForm.elements as FormElements;
+  const $formElements = $contactForm.elements;
   const formElements = {
     name: $formElements.name.value,
     email: $formElements.email.value,
@@ -20,5 +14,4 @@ const handleSubmit = (e: Event): void => {
   console.log('value of formElements: ', formElements);
   $contactForm.reset();
 };
-
 $contactForm.addEventListener('submit', handleSubmit);
