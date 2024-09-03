@@ -1,19 +1,19 @@
-const $tabContainer = document.querySelector('.tab-container') as HTMLElement;
+'use strict';
+const $tabContainer = document.querySelector('.tab-container');
 if (!$tabContainer) {
   throw new Error('Query for $tabContainer failed');
 }
-const $tabs = document.querySelectorAll('.tab') as NodeListOf<HTMLElement>;
+const $tabs = document.querySelectorAll('.tab');
 if (!$tabs) {
   throw new Error('Query for $tabs failed');
 }
-const $views = document.querySelectorAll('.view') as NodeListOf<HTMLElement>;
+const $views = document.querySelectorAll('.view');
 if (!$views) {
   throw new Error('Query for $views failed');
 }
-
-$tabContainer.addEventListener('click', (e: Event): void => {
-  const $eventTarget = e.target as HTMLDivElement;
-  const $dataView: string | null = $eventTarget.getAttribute('data-view');
+$tabContainer.addEventListener('click', (e) => {
+  const $eventTarget = e.target;
+  const $dataView = $eventTarget.getAttribute('data-view');
   if ($eventTarget.matches('.tab')) {
     for (const tab of $tabs) {
       if (tab === $eventTarget) {
