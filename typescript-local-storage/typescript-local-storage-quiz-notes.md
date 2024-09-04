@@ -22,6 +22,8 @@ Answer the following questions in the provided markdown file before turning in t
 
 - When does the `'beforeunload'` event fire on the `window` object?
 
+  - The `'beforeunload'` event fires when the current window is about to be unloaded
+
 ## Notes
 
 All student notes should be written here.
