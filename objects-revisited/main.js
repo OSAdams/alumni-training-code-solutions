@@ -1,26 +1,7 @@
-interface Employee {
-  position: string;
-  daysOfWeekWorking: string[];
-}
-
-interface Businesses {
-  opens: string;
-  closes: string;
-  totalEmployees: number;
-  daysOpen: string[];
-  employees: {
-    [key: string]: Employee;
-  };
-}
-
-interface ApiEmployee {
-  name: string;
-}
-
-const weekDays: string[] = ['M', 'T', 'W'];
-const weekends: string[] = ['S', 'S'];
-const positions: string[] = ['Nights Watch', 'Manager', 'Saiyan', 'Owner'];
-
+'use strict';
+const weekDays = ['M', 'T', 'W'];
+const weekends = ['S', 'S'];
+const positions = ['Nights Watch', 'Manager', 'Saiyan', 'Owner'];
 const business = {
   opens: '7am',
   closes: '5pm',
@@ -41,8 +22,7 @@ const business = {
     },
   },
 };
-
-const addWeekends = (company: Businesses, days: string[]): void => {
+const addWeekends = (company, days) => {
   for (const day of days) {
     company.daysOpen.push(day);
   }
@@ -53,17 +33,11 @@ const addWeekends = (company: Businesses, days: string[]): void => {
     }
   }
 };
-
 // addWeekends(business, weekends);
-
-const addEmployees = (
-  company: Businesses,
-  url: string,
-  limit: number
-): void => {
+const addEmployees = (company, url, limit) => {
   fetch(url)
     .then((res) => res.json())
-    .then((result: ApiEmployee[]) => {
+    .then((result) => {
       const newEmployees = result.slice(0, limit);
       for (const employee of newEmployees) {
         company.employees[employee.name] = {
@@ -76,9 +50,7 @@ const addEmployees = (
     })
     .catch((error) => console.error({ error }));
 };
-
 // addEmployees(business, 'https://jsonplaceholder.typicode.com/users', 4);
-
 console.log('initial business: ', business);
 addEmployees(business, 'https://jsonplaceholder.typicode.com/users', 4);
 console.log('employees added: ', business);
