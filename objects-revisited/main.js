@@ -32,6 +32,7 @@ const addWeekends = (company, days) => {
       employee.daysOfWeekWorking.push(...days);
     }
   }
+  return company;
 };
 // addWeekends(business, weekends);
 const addEmployees = (company, url, limit) => {
@@ -49,6 +50,7 @@ const addEmployees = (company, url, limit) => {
       }
     })
     .catch((error) => console.error({ error }));
+  return company;
 };
 // addEmployees(business, 'https://jsonplaceholder.typicode.com/users', 4);
 console.log('initial business: ', business);

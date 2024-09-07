@@ -42,7 +42,7 @@ const business = {
   },
 };
 
-const addWeekends = (company: Businesses, days: string[]): void => {
+const addWeekends = (company: Businesses, days: string[]): Businesses => {
   for (const day of days) {
     company.daysOpen.push(day);
   }
@@ -52,6 +52,7 @@ const addWeekends = (company: Businesses, days: string[]): void => {
       employee.daysOfWeekWorking.push(...days);
     }
   }
+  return company;
 };
 
 // addWeekends(business, weekends);
@@ -60,7 +61,7 @@ const addEmployees = (
   company: Businesses,
   url: string,
   limit: number
-): void => {
+): Businesses => {
   fetch(url)
     .then((res) => res.json())
     .then((result: ApiEmployee[]) => {
@@ -75,6 +76,7 @@ const addEmployees = (
       }
     })
     .catch((error) => console.error({ error }));
+  return company;
 };
 
 // addEmployees(business, 'https://jsonplaceholder.typicode.com/users', 4);
