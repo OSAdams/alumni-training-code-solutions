@@ -110,6 +110,7 @@ const deleteEmployee = (employeeName) => {
   for (const employee in business.employees) {
     if (employee === employeeName) {
       delete business.employees[employee];
+      business.totalEmployees--;
     }
   }
 };
