@@ -1,12 +1,13 @@
-# express-delete-quiz-notes
+# express-post-json-quiz-notes
 
 ## Quiz Questions
 
 Answer the following questions in the provided markdown file before turning in this exercise:
 
-- What is the significance of an HTTP request's method?
+- What does the `express.json()` middleware do and when would you need it?
 
-  - To determine the specific action to access a resource and send a relevant response to the client.
+  - `express.json()` returns a middleware
+  - You need it when your `express method` requires a `request.body`
 
 ## Notes
 
