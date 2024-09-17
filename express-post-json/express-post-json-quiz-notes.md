@@ -6,6 +6,9 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What does the `express.json()` middleware do and when would you need it?
 
+  - `express.json()` returns a middleware
+  - You need it when your `express method` requires a `request.body`
+
 ## Notes
 
 All student notes should be written here.
