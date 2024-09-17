@@ -6,6 +6,8 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is the significance of an HTTP request's method?
 
+  - To determine the specific action to access a resource and send a relevant response to the client.
+
 ## Notes
 
 All student notes should be written here.
