@@ -6,11 +6,19 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is the purpose of the Express Static middleware?
 
+  - It serves static files such as images, CSS files, and JavaScript files.
+
 - What does `express.static()` return?
+
+  - It returns a middleware function that you can use in the application to serve files from a specified directory
 
 - What are several examples of static files?
 
+  - `.jpg`, `.jpeg`, `.gif`, `.png`, `.css`, `.js`, `.woff`, `.woff2`, `.ttf`, `.otf`, `.html`, `.pdf`, `.txt`
+
 - What is a good way to serve application images using Express?
+
+  - Add the images to your public directory and call `app.use(express.static('public'))`
 
 ## Notes
 
