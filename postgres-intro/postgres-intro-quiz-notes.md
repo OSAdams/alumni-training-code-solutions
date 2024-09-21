@@ -6,11 +6,19 @@ Answer the following questions in the provided markdown file before turning in t
 
 - Why do we use databases in Web development?
 
+  - We use databases to easily organize, access, and manipulate data between applications
+
 - What is PostgreSQL and what are some alternative relational databases?
+
+  - MySQL, SQL Server, Azure SQL Database
 
 - What are some advantages of learning a relational database?
 
+  - Learning relational databases allows developers to better integrate into existing data storage solutions and they are important for nearly any significant application
+
 - What is one way to see if PostgreSQL is running?
+
+  - `sudo service postgresql status
 
 ## Notes
 
