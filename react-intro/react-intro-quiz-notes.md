@@ -6,11 +6,19 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What is React?
 
+  - React is a library used to code more efficiently.
+
 - What is a React component?
+
+  - A piece of the UI that has its own logic and appearance. It's an isolated piece of the UI.
 
 - How do you mount a React app (root component) to the DOM?
 
+  - `ReactDOM.render(, document.getElementById('root'));`
+
 - What are some other popular frontend frameworks?
+
+  - Angular, Svelte
 
 ## Notes
 
