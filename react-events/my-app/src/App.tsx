@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import viteLogo from '../../../../../vite.svg';
+import viteLogo from '../public/vite.svg';
 import './App.css';
+import { CustomButton } from './CustomButton';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const handleClick = (text: string) => {
+    window.alert(`You clicked ${text} button`);
+  };
 
   return (
     <>
@@ -28,6 +33,14 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+        <CustomButton color="red" onCustomClick={() => handleClick('red')} />
+        <CustomButton color="gray" onCustomClick={() => handleClick('gray')} />
+        <CustomButton
+          color="orange"
+          onCustomClick={() => handleClick('orange')}
+        />
+      </div>
     </>
   );
 }
