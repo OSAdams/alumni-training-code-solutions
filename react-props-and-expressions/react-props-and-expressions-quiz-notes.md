@@ -6,11 +6,20 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are props in React?
 
+  - Components can send data or communicate with each other. Props is a way to to pass data between components.
+
 - How do you declare and access props in a component?
+
+  - `<ComponentOne propsName={ value } />`
+  - `{ value } = props`
 
 - How do you pass props to a component?
 
+  - `<ComponentOne propsName={ value } />`
+
 - How do you write JavaScript expressions in JSX?
+
+  - `export const App = () => { return <h1>Hello World!</h1> }`
 
 ## Notes
 
