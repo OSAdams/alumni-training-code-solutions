@@ -11,6 +11,10 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
 
+  - The functions name must start with `use` ie: `useState()`
+  - You cannot call hooks in nested functions, only in other hooks
+  - They must be called at the top level of a component
+
 - What is the purpose of state in React?
 
   - To store data that needs to be remembered for the component.
